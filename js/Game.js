@@ -182,6 +182,8 @@ class Game {
           if (player.life <= 0) {
             //Altere blast para true
             this.playerMoving = false;
+            //Altere estado do jogo
+            //Chame função end()
           }
 
           // Altere a posição da câmera na direção y
@@ -366,13 +368,25 @@ class Game {
   //ATIVIDADE ADICIONAL
  /* handleCarACollisionWithCarB(index) {
     if(index === 1){
-      
-    }
+      if (cars[index - 1].collide(cars[1])){
+        if (this.leftKeyActive){ 
+        player.positionX += 100;
+      } else {
+        player.positionX -= 100;
+      }
 
-    if(index === 2){
-      
+      if (player.life > 0) {
+        player.life -= 185 / 4;
+      }
+
+      player.update();
     }
-  }*/
+  }
+
+  if(index === 2){
+   
+  }
+}*/
 
   showRank() {
     swal({
@@ -396,9 +410,17 @@ class Game {
     });
        
   }
+  
   //Método end
   end() {
-    console.log("Fim de Jogo");
+    swal({
+      title: ` `,
+      text: "  ",
+      imageUrl:
+        "https://www.pngmart.com/files/15/Comic-Explosion-Bubble-PNG-HD.png",
+      imageSize: "200x200",
+      confirmButtonText: "  "
+    })
   }
   
 }
