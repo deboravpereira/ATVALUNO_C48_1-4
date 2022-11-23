@@ -11,9 +11,9 @@ var currentLife = 0;               //C42// SA
 
 function preload() {
   backgroundImage = loadImage("./assets/background.png");
-  car1_img = loadImage("../assets/car1.png");
-  car2_img = loadImage("../assets/car2.png");
-  track = loadImage("../assets/track.jpg");
+  car1_img = loadImage("./assets/car1.png");
+  car2_img = loadImage("./assets/car2.png");
+  track = loadImage("./assets/track.jpg");
   fuelImage = loadImage("./assets/fuel.png");
   powerCoinImage = loadImage("./assets/goldCoin.png");
   lifeImage = loadImage("./assets/life.png");
